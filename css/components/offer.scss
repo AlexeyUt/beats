@@ -1,0 +1,21 @@
+.offer {
+  display: block;
+  max-width: rem(950px);
+}
+
+.offer__col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: left;
+}
+
+.offer__image {
+  content: "";
+  background: url("../img/decor/beats2.png") center center / 50% no-repeat;
+  /*position: absolute;
+  width: rem(450px);
+  height: rem(450px);
+  border-radius: 50%;*/
+}
