@@ -1,0 +1,15 @@
+.logo {
+  height: rem(40px);
+  width: rem(40px);
+  margin-right: rem(37px);
+  fill: $red;
+  left: 0;
+
+  @include tablets {
+    left: 3%;
+  }
+
+  @include phones {
+    left: 3%;
+  }
+}
