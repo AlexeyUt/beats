@@ -1,0 +1,68 @@
+.footer {
+  min-height: rem(90px);
+  background: $white;
+
+  @include tablets {
+    min-height: rem(100px);
+  }
+
+  @include phones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: rem(150px);
+  }
+}
+
+.footer__container {
+  justify-content: space-between;
+  align-items: center;
+
+  @include phones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.footer__contacts {
+  position: absolute;
+  display: block;
+  font-weight: normal;
+  font-size: rem(18px);
+  left: 5%;
+  margin-top: rem(20px);
+
+  @include phones {
+    position: relative;
+    left: 0;
+    margin: 0 0;
+  }
+}
+
+.footer__contacts-place {
+  font-family: Play;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+
+  @include tablets {
+    font-size: 21px;
+  }
+}
+
+.footer__phone {
+  font-family: Play;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: $red;
+
+  &-icon {
+    fill: $red;
+  }
+
+  @include tablets {
+    font-size: 21px;
+  }
+}
