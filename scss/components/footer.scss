@@ -56,7 +56,6 @@
   font-style: normal;
   font-size: 18px;
   line-height: 21px;
-  color: $red;
 
   &-icon {
     fill: $red;
@@ -64,5 +63,6 @@
 
   @include tablets {
     font-size: 21px;
+    color: $red;
   }
 }
