@@ -1,0 +1,35 @@
+.section {
+  height: 100vh;
+  min-height: rem(650px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include tablets {
+    min-height: rem(1000px);
+  }
+
+  @include phones {
+    min-height: rem(800px);
+  }
+}
+
+.section__title {
+  font-weight: bold;
+  font-size: 48px;
+  margin-bottom: rem(25px);
+  text-align: center;
+  text-transform: uppercase;
+
+  &-white {
+    margin-bottom: rem(53px);
+  }
+
+  @include tablets {
+    margin-bottom: rem(30px);
+  }
+
+  @include phones {
+    font-size: 32px;
+  }
+}
