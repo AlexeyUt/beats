@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  align-items: flex-start;
+  padding-right: rem(26px);
+}
+
+/*.phone-number .header__phone-number {
+  @include tablets {
+    display: none;
+  }
+}*/
+
+.header__phone-number {
+  margin-top: rem(5px);
+
+  @include tablets {
+    display: none;
+  }
+
+  @include phones {
+    display: none;
+  }
+}

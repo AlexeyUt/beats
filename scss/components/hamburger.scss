@@ -1,0 +1,28 @@
+.hamburger {
+  position: absolute;
+  display: none;
+  right: 3%;
+  cursor: pointer;
+  transition: all 0.4s;
+
+  &-icon {
+    width: rem(30px);
+    height: rem(30px);
+  }
+
+  @include tablets {
+    position: fixed;
+    right: 0;
+
+  }
+
+  @include phones {
+    position: fixed;
+    right: 0;
+  }
+}
+
+.hamburger-btn {
+  border: none;
+  background: transparent;
+}
