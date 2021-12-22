@@ -792,7 +792,6 @@ img {
 }
 @media screen and (max-width: 480px) {
   .benefits-section:before {
-    bottom: -4.375rem;
     left: 10%;
   }
 }
