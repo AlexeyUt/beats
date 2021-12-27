@@ -1,0 +1,29 @@
+.benefits-section {
+  position: relative;
+
+  &:before {
+    content: url("../img/decor/vector.png");
+    position: absolute;
+    bottom: rem(-25px);
+    left: 5%;
+    z-index: 10;
+
+    @include tablets {
+      left: 10%;
+    }
+
+    @include phones {
+      left: 10%;
+    }
+  }
+}
+
+.benefits-section__container {
+  @include tablets {
+    width: 99%;
+  }
+
+  @include phones {
+    width: 95%;
+  }
+}
