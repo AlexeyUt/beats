@@ -1,0 +1,74 @@
+.footer {
+  min-height: rem(90px);
+  background: $white;
+  padding: rem(20px) 0;
+
+  @include tablets {
+    min-height: rem(100px);
+  }
+
+  @include phones {
+    min-height: rem(150px);
+  }
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include phones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.footer__contacts {
+  display: block;
+  font-weight: normal;
+  font-size: rem(18px);
+}
+
+.footer__contacts-place {
+  font-family: Play;
+  font-style: normal;
+  font-weight: normal;
+  font-size: rem(18px);
+
+  @include tablets {
+    font-size: rem(22px);
+  }
+
+  @include phones {
+    font-size: rem(18px);
+  }
+}
+
+.footer__phone {
+  font-family: Play;
+  font-style: normal;
+  font-size: rem(18px);
+  line-height: 21px;
+  padding-top: rem(4px);
+
+  @include tablets {
+    font-size: rem(18px);
+    color: $red;
+
+    &-icon {
+      fill: $red;
+    }
+  }
+
+  @include phones {
+    padding: rem(12px) 0 rem(20px);
+    font-size: rem(16px);
+    color: $black;
+
+    &-icon {
+      fill: $black;
+    }
+  }
+}
