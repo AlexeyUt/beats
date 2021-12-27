@@ -1,0 +1,16 @@
+.spec {
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(20px);
+}
+
+.spec__icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  margin-right: rem(12px);
+}
+
+.spec__text {
+  flex: 1;
+}
