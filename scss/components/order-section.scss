@@ -1,0 +1,10 @@
+.order-section {
+  background: url("../img/bg/object.png") center bottom/ cover no-repeat;
+  color: $white;
+}
+
+.order-section__title {
+  @include phones {
+    margin-bottom: rem(35px);
+  }
+}
