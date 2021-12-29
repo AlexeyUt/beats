@@ -58,7 +58,7 @@ $(".reviews-switcher__link").click((e) => {
   curItem.addClass("active").siblings().removeClass("active");
 });
 
-//Вертикальный аккордеон
+/*Вертикальный аккордеон
 const openItem = (item) => {
   const container = item.closest(".team__item");
   const contentBlock = container.find(".team__content");
@@ -88,7 +88,7 @@ $('.team__title').click((e) => {
     closeEveryItem(container);
     openItem($this);
   }
-}); 
+});*/
 
 //Форма
 const validateFields = (form, fieldsArray) => {
