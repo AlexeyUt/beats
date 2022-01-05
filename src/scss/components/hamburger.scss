@@ -1,0 +1,45 @@
+.hamburger {
+  width: 24px;
+  height: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 10;
+  border: none;
+  background: none;
+  padding: 0;
+
+  @include tablets {
+    display: flex;
+    margin-right: rem(18px);
+
+    &--active {
+
+      .hamburger__plank {
+        background: $white;
+        &:nth-child(1) {
+          transform: rotate(45deg) translate(6px, 6px);
+        }
+        &:nth-child(2) {
+          transform: rotate(-45deg) translate(5px, -5px);
+        }
+        &:nth-child(3) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @include phones {
+    margin-right: 0;
+  }
+}
+
+.hamburger__plank {
+  display: block;
+  background: $black;
+  height: 4px;
+  border-radius: 10px;
+  width: 100%;
+  transition: transform .3s, background .3s;
+}
