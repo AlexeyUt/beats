@@ -1,0 +1,45 @@
+.socials {
+  position: relative;
+  right: -2.4%;
+  display: flex;
+
+  &__item {
+    margin-right: rem(10px);
+
+    @include phones {
+      margin-right: rem(14px);
+    }
+  }
+
+  &__item:nth-last-child(1) {
+    margin-right: 0;
+  }
+
+  &__icon {
+    height: rem(30px);
+    width: rem(30px);
+    fill: $lightgrey;
+
+    &:hover {
+      fill: $black;
+    }
+
+    @include tablets {
+      height: rem(34px);
+      width: rem(34px);
+    }
+
+    @include phones {
+      height: rem(24px);
+      width: rem(24px);
+    }
+  }
+
+  @include tablets {
+    right: 4%;
+  }
+
+  @include phones {
+    right: 0;
+  }
+}
